@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Add Application - AI Apps</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="myFunctions.js"></script>
+  </head>
+  <body><center>
+    <header >
+      <h1>Add a New Application - إضافة تطبيق جديد</h1>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="apps.html">Applications</a>
+        <a href="add_app.html">Add Apps</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <form id="appForm">
+        <label for="appName">اسم التطبيق (إنكليزي فقط):</label>
+        <input type="text" id="appName" required>
+
+        <label for="company">الشركة المصنعة (إنكليزي فقط):</label>
+        <input type="text" id="company" required>
+
+        <label for="url">الموقع الإلكتروني:</label>
+        <input type="url" id="url" required>
+
+        <label>مجاني:</label>
+        <select id="free">
+          <option value="yes">نعم</option>
+          <option value="no">لا</option>
+        </select>
+
+        <label for="field">مجال الاستخدام:</label>
+        <select id="field" required>
+          <option value="">اختر</option>
+          <option>E-Commerce</option>
+          <option>Education</option>
+          <option>Robotics</option>
+          <option>Healthcare</option>
+        </select>
+
+        <label for="desc">شرح مختصر:</label>
+        <textarea id="desc" required></textarea>
+
+        <button type="submit">إرسال</button>
+        <button type="reset">إعادة</button>
+
+      </form>
+    </div>
+  </body>
+</html>
+
