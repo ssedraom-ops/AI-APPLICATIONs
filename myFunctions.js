@@ -85,7 +85,7 @@ document.getElementById("company").value.trim();
 
     
       const appData = { appName, company, url, free, field, desc };
-      localStorage.setItem("newApp", JSON.stringify(appData));
+      sessionStorage.setItem("newApp", JSON.stringify(appData));
       showSuccessMessage();
     });
   }
@@ -93,10 +93,10 @@ document.getElementById("company").value.trim();
   
   const appsTable = document.querySelector("table");
   if (appsTable) {
-    const newApp = JSON.parse(localStorage.getItem("newApp"));
+    const newApp = JSON.parse(sessionStorage.getItem("newApp"));
     if (newApp) {
       addAppToTable(newApp, appsTable);
-      localStorage.removeItem("newApp");
+      
     }
   }
 
